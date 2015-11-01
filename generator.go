@@ -55,6 +55,7 @@ func NewGenerator(iterations int) (fg *Generator, err error) {
 
 func (fg *Generator) Produce(out chan<- FibNum) {
 	if fg.maxIterations == 0 {
+		close(out)
 		return
 	}
 	var v [2]FibNum

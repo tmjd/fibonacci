@@ -17,7 +17,7 @@ func TestFibonacciNegative(t *testing.T) {
 }
 
 func TestFibonacciNumberOfValuesGenerated(t *testing.T) {
-	var test_values = []int{1, 2, 3, 10, 20, 100, 1000, 100000}
+	var test_values = []int{0, 1, 2, 3, 10, 20, 100, 1000, 100000}
 
 	for _, i := range test_values {
 		fg, err := NewGenerator(i)
